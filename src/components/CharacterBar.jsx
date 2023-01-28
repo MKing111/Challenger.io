@@ -1,9 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { ScoreHeaders, Loader } from '../components';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
-
-import React from 'react'
 
 const CharacterBar = ({ player }) => {
 

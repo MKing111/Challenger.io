@@ -9,8 +9,6 @@ const RealmSelector = () => {
     setSelection(event.target.value)
   }
 
-
-  
   return (
       <Paper
         component='form'
@@ -37,5 +35,7 @@ const RealmSelector = () => {
       </Paper>
   )
 }
+
+
 
 export default RealmSelector

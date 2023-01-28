@@ -11,3 +11,4 @@ export { default as CharacterBar } from './CharacterBar';
 export { default as Loader } from './Loader';
 export { default as RealmSelector } from './RealmSelector';
 export { default as Gateway } from './Gateway';
+export { default as GuildHeader } from './GuildHeader';
