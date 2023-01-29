@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 
 const KeyHeader = () => {
   return (
-    <Box className='keyHeader' sx={{
+    <Box className='Header' sx={{
         display: 'grid',
         gridTemplateAreas: `"dung fort rating btime baff"`,
         }}>

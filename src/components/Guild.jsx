@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 import { Box, Container } from '@mui/material';
 import { useParams } from "react-router-dom";
 import { fetchFromBlizzardAPI } from '../utils/fetchFromBlizzardAPI';
-import { GuildHeader } from '../components';
+import { GuildHeader, GuildRoster } from '../components';
 
 const Guild = () => {
   const [guild, setGuild] = useState([]);
   const { realm, id } = useParams();
   
   useEffect(() => {
-    fetchFromBlizzardAPI(`guilds/profile?region=us&realm=${realm}&name=${id}&fields=members`)
+    fetchFromBlizzardAPI(`guilds/profile?region=us&realm=${realm}&name=${id}&fields=raid_progression%2Craid_encounters%3ARAID_SLUG%3ADIFFICULTY%2Craid_rankings%2Cmembers`)
       .then((data) => setGuild(data))
   }, [realm, id]);
 
@@ -17,6 +17,7 @@ const Guild = () => {
     <Container maxWidth="xl" >
       <Box className='gradient' sx={{ bgcolor: '#1B1B1B', boxShadow: 24,}}>
           <GuildHeader guild={guild} />
+          <GuildRoster guild={guild} />
       </Box>
     </Container>
   )

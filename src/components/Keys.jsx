@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box, Typography, Stack } from '@mui/material';
 import { KeyHeader, Loader } from '../components';
 import { images, affixes } from '../utils/constants'
@@ -17,7 +16,7 @@ const Keys = ({ player }) => {
                         gridTemplateAreas: `"dung fort rating btime baff"`,
                         border: 1, 
                         borderColor: '#9C7C38',
-                        alignItems: 'center'
+                        alignItems: 'center',
                         }}>
                         <Box sx={{ gridArea: 'dung', width: '250px' }}>
                             {images.map((image) => (
@@ -38,7 +37,7 @@ const Keys = ({ player }) => {
                         </Box>
                         <Box p={0.5} pl={1} sx={{ gridArea: 'rating' }}>
                             <Typography fontWeight='bold' p={0.5} sx={{ color: 'white', textAlign: 'center' }}>
-                            { instance.score }
+                            { Math.round(instance.score) }
                             </Typography>
                         </Box>
                         <Box p={0.5} pl={3} sx={{ gridArea: 'btime' }}>

@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { SearchBar, RealmSelector} from '../components';
+import { SearchBar} from '../components';
 import { useState } from 'react';
 import { realmList } from '../utils/constants';
 import { FormControl, Select, MenuItem, Paper, InputLabel } from '@mui/material';

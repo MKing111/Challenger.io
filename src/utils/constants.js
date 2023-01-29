@@ -31,7 +31,28 @@ export const affixes = [
     { name: "Grievous", img: 'https://cdnassets.raider.io/images/wow/icons/medium/ability_backstab.jpg'},
     { name: "Quaking", img: 'https://cdnassets.raider.io/images/wow/icons/medium/spell_nature_earthquake.jpg'},
     { name: "Thundering", img: 'https://cdnassets.raider.io/images/wow/icons/medium/spell_shaman_thunderstorm.jpg'},
+    { name: "Bolstering", img: 'https://cdnassets.raider.io/images/wow/icons/medium/ability_warrior_battleshout.jpg'}
 ]
+
+export const classes = [
+    { name:'Death Knight', img:'https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_classicon.jpg'},
+    { name:'Demon Hunter', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_demonhunter.jpg'},
+    { name:'Druid', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg' },
+    { name:'Evoker', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_evoker.jpg' },
+    { name:'Hunter', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg' },
+    { name:'Mage', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg' },
+    { name:'Monk', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_monk.jpg' },
+    { name:'Paladin', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg' },
+    { name:'Priest', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg' },
+    { name:'Rogue', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg' },
+    { name:'Shaman', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg' },
+    { name:'Warlock', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg' },
+    { name:'Warrior', img:'https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg' },
+]
+
+
+
+
 
 export const realmList = [
   "Aegwynn",

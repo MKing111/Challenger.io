@@ -12,3 +12,5 @@ export { default as Loader } from './Loader';
 export { default as RealmSelector } from './RealmSelector';
 export { default as Gateway } from './Gateway';
 export { default as GuildHeader } from './GuildHeader';
+export { default as GuildRoster } from './GuildRoster';
+export { default as RosterHeader } from './RosterHeader';
