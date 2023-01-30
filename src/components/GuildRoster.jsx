@@ -31,7 +31,7 @@ const GuildRoster = ({ guild }) => {
                                 ))}
                             </Box>
                             <Box sx={{ gridArea: 'name' }}>
-                                <Typography fontWeight='bold' p={0.5} sx={{ color: 'white', textAlign: 'center' }}>
+                                <Typography fontWeight='bold' p={0.5} sx={{ textAlign: 'center', color: roster.character.class === 'Druid' ? '#FF7C0A' : roster.character.class === 'Death Knight' ? '#C41E3A' : roster.character.class === 'Demon Hunter' ? '#A330C9' : roster.character.class === 'Evoker' ? '#33937F' : roster.character.class === 'Hunter' ? '#AAD372' : roster.character.class === 'Mage' ? '#3FC7EB' : roster.character.class === 'Monk' ? '#00FF98' : roster.character.class === 'Paladin' ? '#F48CBA' : roster.character.class === 'Priest' ? '#FFFFFF' : roster.character.class === 'Rogue' ? '#FFF468' : roster.character.class === 'Shaman' ? '#0070DD' : roster.character.class === 'Warlock' ? '#8788EE' : roster.character.class === 'Warrior' ? '#C69B6D': 'white' }}>
                                     { roster.character.name }
                                 </Typography>
                             </Box>

@@ -16,7 +16,7 @@ const Player = () => {
 
   return (
     <Container maxWidth="xl" >
-      <Box className='gradient' sx={{ bgcolor: '#1B1B1B', boxShadow: 24,}}>
+      <Box className='gradient' sx={{ bgcolor: '#0d0d0d', boxShadow: 24,}}>
           <CharacterBar player={player}/>
           <Keys player={player}/>
       </Box>

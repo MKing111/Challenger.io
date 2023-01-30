@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #1B1B1B;
+  background-color: #0d0d0d;
 }
 
 .gradient {
@@ -25,6 +25,8 @@ body {
 .Header {
   background-image: linear-gradient(to bottom right, #d0b57c, #705a29);
 }
+
+
 
 a {
   text-decoration: none;

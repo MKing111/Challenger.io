@@ -5,7 +5,7 @@ import './App.css';
 
 const App = () => (
     <BrowserRouter>
-        <Box sx={{ backgroundColor: '#1B1B1B', width: '100%' }}>
+        <Box sx={{ backgroundColor: '#0d0d0d', width: '100%' }}>
             <Navbar />
             <Routes>
                 <Route exact path='/' element={<Home />} />

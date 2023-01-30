@@ -6,7 +6,7 @@ const Keys = ({ player }) => {
   
     if(!player?.name) return <Loader />;
 
-    return (
+    if(!player?.mythic_plus_best_runs) return (
         <Box  m={2} sx={{ boxShadow: 24, }}>
             <Stack spacing={0} className='gradient'>
                 <KeyHeader />

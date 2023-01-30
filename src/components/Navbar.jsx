@@ -17,7 +17,7 @@ const Navbar = () => {
             direction="row-reverse" 
             alignItems='center' 
             p={2} 
-            sx={{ position: 'sticky', background: '#1B1B1B', top:0, pb: 2, borderBottom: 8, mb: 2, borderColor: '#9C7C38', boxShadow: 15 }}>
+            sx={{ position: 'sticky', background: '#0d0d0d', top:0, pb: 2, borderBottom: 8, mb: 2, borderColor: '#9C7C38', boxShadow: 15 }}>
             <Paper
                 component='form'
                 sx={{
@@ -25,7 +25,7 @@ const Navbar = () => {
                 border: '1px solid #e3e3e3',
                 pl: 2,
                 pr: 2,
-                boxShadow: 'none',
+                boxShadow: '24',
                 mx: 'auto'
                 }}>
                 <FormControl variant="standard" sx={{ 
