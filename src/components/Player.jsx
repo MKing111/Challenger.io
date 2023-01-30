@@ -12,11 +12,11 @@ const Player = () => {
   useEffect(() => {
     fetchFromRaiderioAPI(`characters/profile?region=us&realm=${realm}&name=${id}&fields=raid_progression%2Cmythic_plus_scores_by_season%3Acurrent%2Cgear%2Cguild%2Cmythic_plus_ranks%2Cmythic_plus_best_runs%3Aall'`)
       .then((data) => setPlayer(data))
-  }, [id]);
+  }, [realm, id]);
 
   return (
     <Container maxWidth="xl" >
-      <Box className='gradient' sx={{ bgcolor: '#0d0d0d', boxShadow: 24,}}>
+      <Box className='gradient' sx={{ bgcolor: '#0d0d0d', boxShadow: 24, alignItems: 'center'}}>
           <CharacterBar player={player}/>
           <Keys player={player}/>
       </Box>

@@ -6,8 +6,8 @@ const Keys = ({ player }) => {
   
     if(!player?.name) return <Loader />;
 
-    if(!player?.mythic_plus_best_runs) return (
-        <Box  m={2} sx={{ boxShadow: 24, }}>
+    return (
+        <Box  m={2} mx={'auto'} sx={{ boxShadow: 24, width: '70%' }}>
             <Stack spacing={0} className='gradient'>
                 <KeyHeader />
                 {player.mythic_plus_best_runs.map((instance) => (
@@ -27,22 +27,22 @@ const Keys = ({ player }) => {
                                 </span>
                             ))}
                             <Typography fontWeight='bold' p={2} sx={{ color: 'white', whiteSpace: 'nowrap' }}>
-                                { instance.dungeon }
+                                <span className='title'>{ instance.dungeon } </span>
                             </Typography>
                         </Box>
                         <Box p={0.5} pr={5} pl={5} sx={{ gridArea: 'fort' }}>
                             <Typography fontWeight='bold' p={0.5} sx={{ color: 'white', textAlign: 'center' }}>
-                            { instance.mythic_level } {instance.num_keystone_upgrades === 1? '*' :instance.num_keystone_upgrades === 2? '**': '' } 
+                                <span className='title'>{ instance.mythic_level } {instance.num_keystone_upgrades === 1? '*' :instance.num_keystone_upgrades === 2? '**': '' } </span>
                             </Typography>
                         </Box>
                         <Box p={0.5} pl={1} sx={{ gridArea: 'rating' }}>
                             <Typography fontWeight='bold' p={0.5} sx={{ color: 'white', textAlign: 'center' }}>
-                            { Math.round(instance.score) }
+                             <span className='title'>{ Math.round(instance.score) }</span>
                             </Typography>
                         </Box>
                         <Box p={0.5} pl={3} sx={{ gridArea: 'btime' }}>
                             <Typography fontWeight='bold' p={0.5} sx={{ color: 'white', textAlign: 'center' }}>
-                               { Math.round(instance.clear_time_ms / 60000 * 100) / 100 }
+                                <span className='title'>{ Math.round(instance.clear_time_ms / 60000 * 100) / 100 } </span>
                             </Typography>
                         </Box>
                         <Box p={0.5} sx={{ gridArea: 'baff' }}>
