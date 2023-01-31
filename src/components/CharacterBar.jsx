@@ -7,7 +7,7 @@ const CharacterBar = ({ player }) => {
     if(!player?.name) return <Loader />;
 
     return (
-    <Box m={2} p={3} pb={15} sx={{ 
+    <Box m={2} p={3} pb={10} sx={{ 
                 display: 'grid', 
                 gridTemplateColumns: 'repeat(4, 1fr)',
                 gridTemplateAreas: `"name . . stats"`,

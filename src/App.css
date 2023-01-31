@@ -16,8 +16,7 @@ body {
 }
 
 .title {
-  background: linear-gradient(to bottom right, #d6c08f,
-                    #967836);
+  background: linear-gradient(to bottom right, #ddcaa2, #c1a057, #826830);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -26,13 +25,13 @@ body {
   border: solid;
   border-width: 5px;
   border-image-slice: 3;
-  border-image-source: linear-gradient(to bottom right, #d6c08f, #967836);
+  border-image-source: linear-gradient(to bottom right, #ddcaa2, #c1a057, #826830);
 }
 
 .Header {
-  background-image: linear-gradient(to bottom right, #d6c08f, #967836);
+  background-image: linear-gradient(to bottom right, #ddcaa2, #c1a057, #826830);
   color: #826830;
-  text-shadow: 1px 1px 2px #97894e, 5px 5px 10px #97894e, 5px 10px 5px #97894e;
+  text-shadow: 1px 1px 1px #826830, 1px 5px 10px #826830, 5px 5px 5px #826830;
 }
 
 a {
