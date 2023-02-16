@@ -28,7 +28,7 @@ const GuildHeader = ({ guild }) => {
                 (US) ({ guild.realm})
             </Typography>
         </Box>
-        <Box className='gradient' sx={{ 
+        <Box className='gradient2' sx={{ 
                         display: 'inline-flex', 
                         gridArea: 'mythic',
                         boxShadow: 24,
@@ -38,7 +38,7 @@ const GuildHeader = ({ guild }) => {
               { guild.raid_progression['vault-of-the-incarnates'].mythic_bosses_killed }/8 M
             </Typography>
         </Box>
-        <Box className='gradient' sx={{ 
+        <Box className='gradient2' sx={{ 
                         display: 'inline-flex', 
                         gridArea: 'heroic',
                         boxShadow: 24,
@@ -48,7 +48,7 @@ const GuildHeader = ({ guild }) => {
               { guild.raid_progression['vault-of-the-incarnates'].heroic_bosses_killed }/8 H
             </Typography>
         </Box>
-        <Box className='gradient' sx={{ 
+        <Box className='gradient2' sx={{ 
                         display: 'inline-flex', 
                         gridArea: 'normal',
                         boxShadow: 24,

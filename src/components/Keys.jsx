@@ -8,7 +8,7 @@ const Keys = ({ player }) => {
 
     return (
         <Box  m={2} mx={'auto'} sx={{ boxShadow: 24, width: '70%' }}>
-            <Stack spacing={0} className='gradient'>
+            <Stack spacing={0} className='gradient2'>
                 <KeyHeader />
                 {player.mythic_plus_best_runs.map((instance) => (
                     <Box key={instance.dungeon} sx={{
@@ -52,7 +52,7 @@ const Keys = ({ player }) => {
                                         {affixes.map((affix2) => (
                                             <span key={affix2.name}>
                                                 {affix1.name === affix2.name && 
-                                                        <img src={affix2.img} className="affix" alt='logo' />
+                                                        <img src={affix2.img} alt='logo' />
                                                 }
                                             </span>
                                         ))}

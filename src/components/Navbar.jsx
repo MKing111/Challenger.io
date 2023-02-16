@@ -1,49 +1,17 @@
-import { Stack } from '@mui/material';
+import { Stack, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { SearchBar} from '../components';
-import { useState } from 'react';
-import { realmList } from '../utils/constants';
-import { FormControl, Select, MenuItem, Paper, InputLabel } from '@mui/material';
+import { DynamicSearchBar} from '../components';
 
 const Navbar = () => {
-    const [selection, setSelection] = useState('');
-
-    const handleChange = (event) => {
-        setSelection(event.target.value)
-    }
-    
     return (  
         <Stack 
             direction="row-reverse" 
-            alignItems='center' 
+            alignItems='center'
+            justifyContent="space-between" 
             p={2} 
             sx={{ position: 'sticky', background: '#0d0d0d', top:0, pb: 2, borderBottom: 8, mb: 2, borderColor: '#967836', boxShadow: 15 }}>
-            <Paper
-                component='form'
-                sx={{
-                borderRadius: 20,
-                border: '1px solid #e3e3e3',
-                pl: 2,
-                pr: 2,
-                boxShadow: '24',
-                mx: 'auto'
-                }}>
-                <FormControl variant="standard" sx={{ 
-                                width: 250,
-                                borderRadius: 20,
-                                p: 1,
-                                boxShadow: 'none',
-                                mx: 'auto'
-                                }}>
-                    <InputLabel sx={{pl: 2}}>Realm</InputLabel>
-                    <Select value={selection} label="Realm" onChange={handleChange}>
-                        {realmList.map((realm) => (
-                            <MenuItem key={realm} value={realm}>{realm}</MenuItem>
-                        ))}
-                    </Select>
-                </FormControl>
-            </Paper>
-            <SearchBar selection={selection} />
+            <Box></Box>
+            <DynamicSearchBar />
             <Link to="/" style={{ display: "flex", alignItems: "center" }}>
                 <img src={'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/WoW_icon.svg/1200px-WoW_icon.svg.png'} alt="logo" height={45} />
             </Link>

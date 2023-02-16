@@ -16,7 +16,7 @@ const ScoreHeaders = ({ player }) => {
             gridTemplateRows: 'repeat(2, 40%)',
             gap: 1,
             }}>
-            <Box m={3} p={1} className='gradient' sx={{ 
+            <Box m={3} p={1} className='gradient2' sx={{ 
                             display: 'inline-flex', 
                             gridColumn: '3',
                             boxShadow: 24,
@@ -25,7 +25,7 @@ const ScoreHeaders = ({ player }) => {
                    { player.gear.item_level_equipped } <span className='title' style={{fontFamily: 'CordiaUPC'}}>ilvl</span>
                 </Typography>
             </Box>
-            <Box m={3} p={1} className='gradient' sx={{ 
+            <Box m={3} p={1} className='gradient2' sx={{ 
                             display: 'inline-flex', 
                             gridColumn: '4',
                             boxShadow: 24,}}>
@@ -33,7 +33,7 @@ const ScoreHeaders = ({ player }) => {
                     <span  className='title'>{ player.raid_progression['vault-of-the-incarnates'].summary } Vault </span>
                 </Typography>
             </Box>
-            <Box m={3} p={1} className='gradient' sx={{ 
+            <Box m={3} p={1} className='gradient2' sx={{ 
                             display: 'inline-flex', 
                             gridColumn: '5',
                             boxShadow: 24,

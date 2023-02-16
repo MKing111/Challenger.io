@@ -8,8 +8,8 @@ const GuildRoster = ({ guild }) => {
     if(!guild?.members) return <Loader />;
   
     return (
-    <Box  m={2} sx={{ boxShadow: 24, }}>
-            <Stack spacing={0} className='gradient'>
+    <Box  m={2} pl={20} pr={20} sx={{ boxShadow: 24, }}>
+            <Stack spacing={0} className='gradient2'>
                 <RosterHeader />
                 {guild.members.map((roster) => (
                     <Link key={roster.character.name} to={`/player/${guild.realm}/${roster.character.name}`} >
